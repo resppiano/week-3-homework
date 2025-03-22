@@ -1,4 +1,5 @@
-// SPDX-License-Identifier: MIT
+
+SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
@@ -124,24 +125,21 @@ contract TokenizedBallotSystem is ERC20, ERC20Permit, ERC20Votes, AccessControl 
     }
 }
 
-
-//Testing Framework:
+//Unit-Testing:
 
 describe("TokenizedBallotSystem", function () {
     describe("Token Functionality", function () {
         it("Should mint tokens to accounts and reflect the correct balance")
-        it("Should allow delegation of voting power through self-delegation") 
+        it("Should allow delegation of voting power through self-delegation")
         
         //TODO
-        
     });
     
     describe("Ballot Initialization", function () {
-        it("Should only allow admin to initialize the ballot with proposals")
-        it("Should require the target block number to be in the past")
+        it("Should only allow admin to initialize the ballot with proposals"))
+        it("Should require the target block number to be in the past") 
         
         //TODO
-        
     });
     
     describe("Voting Process", function () {
@@ -149,23 +147,18 @@ describe("TokenizedBallotSystem", function () {
         it("Should not allow voting beyond available voting power") 
         
         //TODO
-        
     });
     
     describe("Results Calculation", function () {
-        it("Should correctly determine the winning proposal based on vote count")
+        it("Should correctly determine the winning proposal based on vote count") 
         it("Should return the correct name of the winning proposal") 
         
         //TODO
-        
     });
     
     describe("Voting Power Management", function () {
-        it("Should track remaining voting power correctly after partial votes")
-        it("Should prevent double-spending of voting power across multiple votes")
+        it("Should track remaining voting power correctly after partial votes") 
+        it("Should prevent double-spending of voting power across multiple votes") 
         
         //TODO
-        
-    });
-}
-
+    }); 
